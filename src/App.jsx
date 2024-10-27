@@ -1,5 +1,6 @@
 
 import './App.css'
+import Banner from './Banner/Banner'
 import Nabvar from './Navbar/Nabvar'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <>
 
     <Nabvar></Nabvar>
+    <Banner></Banner>
 
-    
+
     </>
   )
 }
