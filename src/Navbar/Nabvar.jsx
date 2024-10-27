@@ -3,7 +3,8 @@ import logo from "../../public/logo.png";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { FaBars } from "react-icons/fa6";
 
-const Nabvar = () => {
+// eslint-disable-next-line react/prop-types
+const Nabvar = ({coin}) => {
   return (
     <div className="py-3 sticky backdrop-filter backdrop-blur-lg bg-opacity-50 bg-sky-100">
       <nav className="w-11/12 mx-auto flex justify-between items-center mt-2">
@@ -41,7 +42,7 @@ const Nabvar = () => {
           <p className="font-semibold text-gray-500">Teams</p>
           <p className="font-semibold text-gray-500">Schedules</p>
           <div className="flex p-2 border space-x-1 items-center rounded-lg font-semibold">
-            <p>coin</p>
+            <p>{coin} coin</p>
             <p className="text-yellow-400 text-xl">
               <AiFillDollarCircle />
             </p>

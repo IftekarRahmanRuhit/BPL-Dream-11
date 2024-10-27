@@ -1,8 +1,12 @@
 
 import PropTypes from 'prop-types'
 import bannermain from "../../public/banner-main.png";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Banner.css'
-const Banner = () => {
+
+// eslint-disable-next-line react/prop-types
+const Banner = ({handleClaimFreeCredit}) => {
   return (
     <div className='w-11/12 mx-auto banner bg-black p-5 mt-8 rounded-lg'>
         <div className='flex flex-col justify-center items-center '>
@@ -14,8 +18,10 @@ const Banner = () => {
                 <p className='text-white font-medium md:text-2xl opacity-70'>Beyond Boundaries, Beyond Imagination</p>
             </div>
             <div className='p-1 border-2 border-[#E7FE29] rounded-lg mt-6'>
-            <button className="btn bg-[#E7FE29] border-none font-semibold">Claim Free Credit</button>
+            <button onClick={()=>handleClaimFreeCredit(8000000)} className="btn bg-[#E7FE29] border-none font-semibold">Claim Free Credit</button>
+            <ToastContainer />
             </div>
+            
         </div>
     
       
