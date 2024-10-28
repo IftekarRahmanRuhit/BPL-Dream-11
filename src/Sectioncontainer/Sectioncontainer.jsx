@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 import PropTypes from 'prop-types';
@@ -5,11 +6,13 @@ import './Activebtn.css';
 import Selectedplayers from '../Selectedplayers/Selectedplayers';
 import Players from '../Players/Players';
 
-const Sectioncontainer = ({ handleActiveButton, isActive, selectedPlayers,handleSelectedPlayer }) => {
+const Sectioncontainer = ({ handleActiveButton, isActive, selectedPlayers,handleSelectedPlayer, handleRemovePlayer }) => {
+
+  const handleAddMorePlayers = () => { handleActiveButton('available')}
     return (
         <div className="w-11/12 mx-auto mt-9">
             <div className="flex justify-between items-center">
-                <p className='font-bold'>{isActive.available ? "Available Players" : `Selected Players(${selectedPlayers.length}/6)`}</p>
+                <p className='font-bold md:text-xl'>{isActive.available ? "Available Players" : `Selected Players(${selectedPlayers.length}/6)`}</p>
                 <div className="flex">
                     <button 
                         onClick={() => handleActiveButton('available')} 
@@ -26,7 +29,7 @@ const Sectioncontainer = ({ handleActiveButton, isActive, selectedPlayers,handle
 
 
             <div className=''>
-                {isActive.available ? (<Players handleSelectedPlayer={handleSelectedPlayer} />) : (<Selectedplayers selectedPlayers={selectedPlayers}  />)}
+                {isActive.available ? (<Players handleSelectedPlayer={handleSelectedPlayer} />) : (<Selectedplayers handleAddMorePlayers={handleAddMorePlayers} handleRemovePlayer={handleRemovePlayer} selectedPlayers={selectedPlayers}  />)}
             </div>
         </div>
 

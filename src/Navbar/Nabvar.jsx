@@ -50,7 +50,7 @@ const Nabvar = ({coin}) => {
         </div>
 
         <div className="md:hidden flex p-2 border space-x-1 items-center rounded-lg font-semibold">
-          <p>coin</p>
+          <p>{coin} coin</p>
           <p className="text-yellow-400 text-xl">
             <AiFillDollarCircle />
           </p>

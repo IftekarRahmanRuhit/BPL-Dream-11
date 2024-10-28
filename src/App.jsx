@@ -93,7 +93,16 @@ function App() {
     }
   }
 
-  console.log(selectedPlayers)
+  const handleRemovePlayer = (id) => {
+    const remainingPlayers = selectedPlayers.filter(player => player.id !== id);
+    setSelectedPlayers(remainingPlayers);
+
+    toast.warn('Player removed', {
+      position: "top-center",
+      autoClose: 2000,
+      theme: 'colored'
+    });
+  };
 
 
 
@@ -104,7 +113,7 @@ function App() {
 
     <Nabvar coin ={coin}></Nabvar>
     <Banner handleClaimFreeCredit={handleClaimFreeCredit} ></Banner>
-    <Sectioncontainer handleSelectedPlayer={handleSelectedPlayer} selectedPlayers={selectedPlayers} isActive={isActive} handleActiveButton = {handleActiveButton }></Sectioncontainer>
+    <Sectioncontainer handleRemovePlayer={handleRemovePlayer} handleSelectedPlayer={handleSelectedPlayer} selectedPlayers={selectedPlayers} isActive={isActive} handleActiveButton = {handleActiveButton }></Sectioncontainer>
 
     {/* <Players handleSelectedPlayer={handleSelectedPlayer}></Players> */}
     
