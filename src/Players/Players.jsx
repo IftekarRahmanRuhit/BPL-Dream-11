@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import Player from '../Player/Player'
 
-const Players = () => {
+const Players = ({handleSelectedPlayer}) => {
 
     const [players, setPlayers] = useState([])
 
@@ -17,9 +17,10 @@ const Players = () => {
     
 
   return (
-    <div className=' w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 '>
         {
-            players.map(player => <Player player={player}></Player>)
+            // eslint-disable-next-line react/jsx-key
+            players.map(player => <Player handleSelectedPlayer={handleSelectedPlayer} player={player}></Player>)
             
         }
     </div>

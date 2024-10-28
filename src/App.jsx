@@ -8,6 +8,7 @@ import Nabvar from './Navbar/Nabvar'
 
 import Sectioncontainer from './Sectioncontainer/Sectioncontainer';
 import Players from './Players/Players'
+import Player from './Player/Player';
 
 
 
@@ -47,6 +48,53 @@ function App() {
     }
   }
 
+  const[selectedPlayers, setSelectedPlayers] = useState([]);
+
+  const handleSelectedPlayer = (player) =>{
+    const unique = selectedPlayers.find(
+      (uniquePlayer) => uniquePlayer.id === player.id
+    );
+
+    if (unique) {
+
+      toast.error('Already Selected',{
+        position: "top-center",
+        autoClose: 2000,
+        theme: 'colored'
+      })
+
+    }
+    else if (selectedPlayers.length < 4 && player.price <= coin) {
+      setCoin(coin - player.price);
+
+      toast.success(`${player.name} selected`,{
+        position: "top-center",
+        autoClose: 2000,
+        theme: 'colored'
+      })
+
+      setSelectedPlayers([...selectedPlayers, player]);
+    }
+    else if (player.price > coin) {
+
+      toast.warn('Insufficient Balance',{
+        position: "top-center",
+        autoClose: 2000,
+        theme: 'colored'
+      })
+
+    } 
+    else {
+      toast.warn('You can Select only 6 player',{
+        position: "top-center",
+        autoClose: 2000,
+        theme: 'colored'
+      })
+    }
+  }
+
+  console.log(selectedPlayers)
+
 
 
 
@@ -56,9 +104,12 @@ function App() {
 
     <Nabvar coin ={coin}></Nabvar>
     <Banner handleClaimFreeCredit={handleClaimFreeCredit} ></Banner>
-    <Sectioncontainer isActive={isActive} handleActiveButton = {handleActiveButton }></Sectioncontainer>
+    <Sectioncontainer handleSelectedPlayer={handleSelectedPlayer} selectedPlayers={selectedPlayers} isActive={isActive} handleActiveButton = {handleActiveButton }></Sectioncontainer>
+
+    {/* <Players handleSelectedPlayer={handleSelectedPlayer}></Players> */}
     
-    <Players></Players>
+
+    
 
    
     </>

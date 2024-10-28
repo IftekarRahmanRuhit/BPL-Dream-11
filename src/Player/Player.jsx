@@ -1,13 +1,14 @@
 
 import PropTypes from 'prop-types'
 import { RiUser3Fill } from "react-icons/ri";
-import { FaRegFlag } from "react-icons/fa6";
+
+
 
 // eslint-disable-next-line react/prop-types
-const Player = ({player}) => {
+const Player = ({player , handleSelectedPlayer}) => {
 
     const {id,name,img,country,type,batting_style,bowling_style,price,flag} = player
-    console.log(player)
+   
 
   return (
     <div>
@@ -54,7 +55,8 @@ const Player = ({player}) => {
                         <p className='font-bold'>Price:${price}</p>
                     </div>
                     <div>
-                        <button className='btn btn-sm hover:bg-[#E7FE29]'>Choose player</button>
+                        <button onClick={()=>handleSelectedPlayer(player)} className='btn btn-sm hover:bg-[#E7FE29]'>Choose player</button>
+                       
                     </div>
                 </div>
                 
