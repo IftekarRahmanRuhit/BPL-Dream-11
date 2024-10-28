@@ -12,8 +12,8 @@ const Player = ({player , handleSelectedPlayer}) => {
 
   return (
     <div>
-        <div className='w-11/12 mx-auto mb-8'>
-            <div className='border rounded-xl p-4 '>
+        <div className='w-11/12 mx-auto mb-8 '>
+            <div className='border-2 rounded-xl p-4 bg-stone-50 shadow-lg '>
 
 
                 <img className='w-full h-64 rounded-xl' src={img} alt="" />
@@ -50,12 +50,12 @@ const Player = ({player , handleSelectedPlayer}) => {
                     </div>
                 </div>
 
-                <div className='flex justify-between items-center mt-3'>
+                <div className='flex justify-between items-center mt-4'>
                     <div>
                         <p className='font-bold'>Price:${price}</p>
                     </div>
-                    <div>
-                        <button onClick={()=>handleSelectedPlayer(player)} className='btn btn-sm hover:bg-[#E7FE29]'>Choose player</button>
+                    <div className=''>
+                        <button onClick={()=>handleSelectedPlayer(player)} className='btn btn-sm hover:bg-[#E7FE29] mb-3'>Choose player</button>
                        
                     </div>
                 </div>

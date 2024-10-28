@@ -64,5 +64,72 @@
         "batting_style": "Left-hand bat",
         "bowling_style": "Right-arm legbreak",
         "price": 140000
+    },
+    {
+        "id": 7,
+        "name": "Andre Russell",
+        "img": "https://i.ibb.co.com/vsC5WWW/andre-russell.jpg",
+        "flag": "https://i.ibb.co.com/k16p1V3/windies-flg.jpg",
+        "country": "West Indies",
+        "type": "All-rounder",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm fast",
+        "price": 180000
+        
+    },
+    {
+        "id": 8,
+        "name": "Babar Azam",
+        "img": "https://i.ibb.co.com/fFZzsmG/Babar-Azam-1.jpg",
+        "flag":"https://i.ibb.co.com/J529wzL/pk-flag.webp",
+        "country": "Pakistan",
+        "type": "Batsman",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm medium",
+        "price": 200000
+    },
+    {
+        "id": 9,
+        "name": "Mustafizur Rahman",
+        "img": "https://i.ibb.co.com/DCYx7s7/mustafiz.jpg",
+        "flag":"https://i.ibb.co.com/XsmWQvg/Flag-of-Bangladesh-svg.png",
+        "country": "Bangladesh",
+        "type": "Bowler",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Left-arm fast",
+        "price": 110000
+    },
+    {
+        "id": 10,
+        "name": "Shakib Al Hasan",
+        "img": "https://i.ibb.co.com/2sSB1tq/sakib-al-hasan.jpg",
+        "flag":"https://i.ibb.co.com/XsmWQvg/Flag-of-Bangladesh-svg.png",
+        "country": "Bangladesh",
+        "type": "All-rounder",
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Left-arm orthodox",
+        "price": 170000
+    },
+    {
+        "id": 11,
+        "name": "Rashid Khan",
+        "img": "https://i.ibb.co.com/M8HycwH/rashid-khan.jpg",
+        "flag":"https://i.ibb.co.com/jb9m3Vb/afg-flag.jpg",
+        "country": "Afghanistan",
+        "type": "Bowler",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm legbreak",
+        "price": 150000
+    },
+    {
+        "id": 12,
+        "name": "Steve Smith",
+        "img": "https://i.ibb.co.com/tQz9P97/steve-smith-australia.webp",
+        "flag":"https://i.ibb.co.com/2j2qtgX/aus-flag.jpg",
+        "country": "Australia",
+        "type": "Batsman",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm medium",
+        "price": 190000
     }
 ]

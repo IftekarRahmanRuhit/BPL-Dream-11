@@ -64,7 +64,7 @@ function App() {
       })
 
     }
-    else if (selectedPlayers.length < 4 && player.price <= coin) {
+    else if (selectedPlayers.length < 6 && player.price <= coin) {
       setCoin(coin - player.price);
 
       toast.success(`${player.name} selected`,{

@@ -37,11 +37,11 @@ const Nabvar = ({coin}) => {
         </div>
 
         <div className="hidden md:flex justify-between items-center space-x-9 ">
-          <p className="font-semibold text-gray-600">Home</p>
-          <p className="font-semibold text-gray-500">Fixture</p>
-          <p className="font-semibold text-gray-500">Teams</p>
-          <p className="font-semibold text-gray-500">Schedules</p>
-          <div className="flex p-2 border space-x-1 items-center rounded-lg font-semibold">
+          <p className="cursor-pointer font-semibold text-gray-600">Home</p>
+          <p className="cursor-pointer font-semibold text-gray-500">Fixture</p>
+          <p className="cursor-pointer font-semibold text-gray-500">Teams</p>
+          <p className="cursor-pointer font-semibold text-gray-500">Schedules</p>
+          <div className="flex p-2 border-2 space-x-1 items-center rounded-lg font-semibold cursor-pointer">
             <p>{coin} coin</p>
             <p className="text-yellow-400 text-xl">
               <AiFillDollarCircle />
