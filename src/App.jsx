@@ -6,6 +6,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import Banner from './Banner/Banner'
 import Nabvar from './Navbar/Nabvar'
 
+import Sectioncontainer from './Sectioncontainer/Sectioncontainer';
+import Players from './Players/Players'
+
+
 
 function App() {
 
@@ -22,14 +26,41 @@ function App() {
     })
   }
 
+  const [isActive, setIsActive] = useState({
+    available : true,
+    status: "available"
+  })
+
+  const handleActiveButton = (status)=>{
+    
+    if(status === "available"){
+      setIsActive({
+            available : true,
+            status: "available"
+      })
+    }
+    else{
+      setIsActive({
+            available : false,
+            status: "selected"
+      })
+    }
+  }
+
+
+
+
 
   return (
     <>
 
     <Nabvar coin ={coin}></Nabvar>
     <Banner handleClaimFreeCredit={handleClaimFreeCredit} ></Banner>
+    <Sectioncontainer isActive={isActive} handleActiveButton = {handleActiveButton }></Sectioncontainer>
+    
+    <Players></Players>
 
-
+   
     </>
   )
 }

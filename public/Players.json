@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Jos Buttler",
+        "img": "https://i.ibb.co.com/6XYRLkH/buttler.jpg",
+        "flag": "https://i.ibb.co.com/HGPyLyC/Flag-England.webp",
+        "country": "England",
+        "type": "Batsman",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "N/A",
+        "price": 120000
+    },
+    {
+        "id": 2,
+        "name": "Virat Kohli",
+        "img": "https://i.ibb.co.com/Vp946CV/virat-kohli.jpg",
+        "flag": "https://i.ibb.co.com/d269NLH/Flag-of-India-svg.webp",
+        "country": "India",
+        "type": "Batsman",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm medium",
+        "price": 150000
+    },
+    {
+        "id": 3,
+        "name": "Ben Stokes",
+        "img": "https://i.ibb.co.com/TcnMcBy/ben-stokes.jpg",
+        "flag": "https://i.ibb.co.com/HGPyLyC/Flag-England.webp",
+        "country": "England",
+        "type": "All-rounder",
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Right-arm fast",
+        "price": 90000
+    },
+    {
+        "id": 4,
+        "name": "Kane Williamson",
+        "img": "https://i.ibb.co.com/B3nkRb9/Kane-Williamson.jpg",
+        "flag": "https://i.ibb.co.com/pP4ZDr3/NZ-flag.jpg",
+        "country": "New Zealand",
+        "type": "Batsman",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-arm offbreak",
+        "price": 130000
+    },
+    {
+        "id": 5,
+        "name": "Trent Boalt",
+        "img": "https://i.ibb.co.com/kJ4ypjr/boalt.jpg",
+        "flag": "https://i.ibb.co.com/pP4ZDr3/NZ-flag.jpg",
+        "country": "New Zealand",
+        "type": "Bowler",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Left-arm fast",
+        "price": 160000
+    },
+    {
+        "id": 6,
+        "name": "David Warner",
+        "img": "https://i.ibb.co.com/0G7Yck0/david-warner.webp",
+        "flag": "https://i.ibb.co.com/2j2qtgX/aus-flag.jpg",
+        "country": "Australia",
+        "type": "Batsman",
+        "batting_style": "Left-hand bat",
+        "bowling_style": "Right-arm legbreak",
+        "price": 140000
+    }
+]
