@@ -10,9 +10,9 @@ const Sectioncontainer = ({ handleActiveButton, isActive, selectedPlayers,handle
 
   const handleAddMorePlayers = () => { handleActiveButton('available')}
     return (
-        <div className="w-11/12 mx-auto mt-9">
+        <div className="w-11/12 mx-auto mt-9 max-w-screen-2xl">
             <div className="flex justify-between items-center">
-                <p className='font-bold md:text-xl'>{isActive.available ? "Available Players" : `Selected Players(${selectedPlayers.length}/6)`}</p>
+                <p className='font-bold text-xl'>{isActive.available ? "Available Players" : `Selected Players(${selectedPlayers.length}/6)`}</p>
                 <div className="flex">
                     <button 
                         onClick={() => handleActiveButton('available')} 
@@ -28,7 +28,7 @@ const Sectioncontainer = ({ handleActiveButton, isActive, selectedPlayers,handle
             </div>
 
 
-            <div className=''>
+            <div>
                 {isActive.available ? (<Players handleSelectedPlayer={handleSelectedPlayer} />) : (<Selectedplayers handleAddMorePlayers={handleAddMorePlayers} handleRemovePlayer={handleRemovePlayer} selectedPlayers={selectedPlayers}  />)}
             </div>
         </div>

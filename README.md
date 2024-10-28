@@ -1,8 +1,29 @@
-# React + Vite
+# BPL-Dream11
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description Of The Project
 
-Currently, two official plugins are available:
+This project is a Sports Team Selection Platform that enables users to select their preferred players from a list of available players. Each player comes with a unique price, and users can select players within a defined coin balance. The project provides feedback through toast notifications, enhancing user interaction and engagement. It includes features to manage available and selected players, with the ability to claim free credits and toggle between views for available and selected players.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies used
+
+
+- React: For UI components and state management.
+- CSS & Tailwind CSS: For styling and layout.
+- React Toastify: For user notifications.
+- React Icons: For icons throughout the app.
+
+## Key Features 
+
+###  **✅ Dynamic Player Selection with Budget Management.**
+
+
+
+###  **✅ Toggle Between Available and Selected Players.**
+
+
+
+###  **✅ JSX for Streamlined Component Structure**
+
+###  **✅ Responsive Navbar with Coin Display**
+
+###  **✅ Fully responsive**

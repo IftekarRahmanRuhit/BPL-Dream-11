@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa6";
 // eslint-disable-next-line react/prop-types
 const Nabvar = ({coin}) => {
   return (
-    <div className="py-3 sticky backdrop-filter backdrop-blur-lg bg-opacity-50 bg-sky-100">
+    <div className="py-3 sticky top-0 w-full backdrop-filter backdrop-blur-lg bg-opacity-90 bg-sky-50 max-w-screen-2xl mx-auto ">
       <nav className="w-11/12 mx-auto flex justify-between items-center mt-2">
         <div className="flex justify-between items-center space-x-3">
             <div>

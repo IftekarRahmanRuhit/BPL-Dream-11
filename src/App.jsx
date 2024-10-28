@@ -7,8 +7,8 @@ import Banner from './Banner/Banner'
 import Nabvar from './Navbar/Nabvar'
 
 import Sectioncontainer from './Sectioncontainer/Sectioncontainer';
-import Players from './Players/Players'
-import Player from './Player/Player';
+
+import Footer from './Footer/Footer';
 
 
 
@@ -106,16 +106,20 @@ function App() {
 
 
 
-
-
   return (
     <>
 
     <Nabvar coin ={coin}></Nabvar>
+
     <Banner handleClaimFreeCredit={handleClaimFreeCredit} ></Banner>
+
     <Sectioncontainer handleRemovePlayer={handleRemovePlayer} handleSelectedPlayer={handleSelectedPlayer} selectedPlayers={selectedPlayers} isActive={isActive} handleActiveButton = {handleActiveButton }></Sectioncontainer>
 
-    {/* <Players handleSelectedPlayer={handleSelectedPlayer}></Players> */}
+    <Footer></Footer>
+
+
+
+   
     
 
     

@@ -8,7 +8,7 @@ import './Banner.css'
 // eslint-disable-next-line react/prop-types
 const Banner = ({handleClaimFreeCredit}) => {
   return (
-    <div className='w-11/12 mx-auto banner bg-black p-5 mt-8 rounded-lg'>
+    <div className='w-11/12 mx-auto banner bg-black p-5 mt-8 rounded-lg max-w-screen-2xl'>
         <div className='flex flex-col justify-center items-center '>
             <img src={bannermain} alt="" />
             <div className='mt-6'>
